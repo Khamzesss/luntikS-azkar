@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  gap: 0;
+  margin: 0;
+}
+
+.description img {
+  display: block;
+  margin: 0 auto;
+}
+
+.description {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-image: url(./img/newfon.jpg);
+  border-radius: 0 0 30px 30px;
+  padding: 4px 0;
+  width: 100%;
+
+  border: 3px solid rgb(213, 213, 213);
+  animation: blink 5s infinite;
+  transform: translate(-3px);
+}
+
+@keyframes blink {
+  0% {
+    border-color: rgb(206, 206, 206);
+  }
+
+  50% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: rgb(202, 202, 202);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .description {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+.pet {
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 19px;
+  text-align: center;
+  letter-spacing: 1.2px;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  margin-top: 10px;
+  animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: rgb(215, 215, 215);
+  }
+
+  50% {
+    color: #ffffff;
+  }
+
+  100% {
+    color: rgb(199, 199, 199);
+  }
+}
+
+.question {
+  border: 2px solid yellow;
+  border-radius: 16px;
+  color: white;
+  margin-top: 5px;
+  animation: blink 5s infinite;
+  transform: translateY(135px);
+}
+
+.question1 {
+  position: relative;
+  border: 3px solid yellow;
+  border-radius: 16px 16px 0px 0px;
+  color: white;
+  margin-top: 5px;
+  animation: blink 5s infinite;
+  transform: translateY(145px);
+}
+.question555 {
+  position: relative;
+  border: 1.5px solid yellow;
+  border-radius: 50px;
+  color: white;
+  margin-top: 5px;
+  animation: blink 5s infinite;
+}
+
+.questionp {
+  margin: 10px 10px;
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 24px;
+  font-variation-settings: "wdth" 100;
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 0.5px yellow;
+}
+
+.newp {
+  margin: 10px 10px;
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 22px;
+  font-variation-settings: "wdth" 100;
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 0.5px yellow;
+}
+
+.newp2 {
+  margin: 10px 10px;
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 22px;
+  font-variation-settings: "wdth" 100;
+  text-align: center;
+  color: white;
+}
+
+.questionp1 {
+  margin: 1px 1px;
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  -webkit-text-stroke: 0.5px yellow;
+}
+
+@keyframes blink {
+  0% {
+    border-color: rgb(207, 207, 207);
+  }
+
+  50% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: rgb(215, 215, 215);
+  }
+}
+
+.button-container {
+  display: flex;
+  width: 350px;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-left: 10px; */
+  position: fixed;
+  /* Закрепляем контейнер кнопок */
+  bottom: 3px;
+  /* Отступ от нижней части окна */
+  border-radius: 50px;
+
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 13px;
+  color: rgb(202, 239, 255);
+  background-color: black;
+}
+
+button {
+  margin: 5px;
+  /* padding: 10px 20px; */
+  font-size: 25px;
+  background-color: yellow;
+  /* Цвет кнопок */
+  border: none;
+  /* Убираем рамку */
+  border-radius: 50px;
+  /* Закругленные углы */
+
+  transition: background-color 0.3s;
+  /* Плавный переход цвета */
+}
+
+button:hover {
+  background-color: gold;
+  /* Цвет кнопки при наведении */
+}
+
+#counter {
+  font-size: 24px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.cont-block {
+  display: flex;
+  justify-content: center;
+}
+
+/* Новые изменения */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 20px);
+  max-width: 400px;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 10px;
+
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  transform: translateY(100px);
+}
+
+.content {
+  display: flex;
+  margin-top: 65px;
+  width: 400px;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+}
+
+.content p {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: 150px;
+  }
+
+  .content h2 {
+    font-size: 1.2rem;
+  }
+
+  .content p {
+    font-size: 20px;
+  }
+}
+
+/* дополнения */
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+button {
+  padding: 8px 20px;
+  font-size: 16px;
+  background: #ffddf1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #a9dafb;
+  transform: scale(1.05);
+}
+
+.page {
+  display: none;
+  font-size: 24px;
+  margin: 10px 0;
+  text-align: justify;
+}
+
+.page.active {
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  display: block;
+  animation: fadeIn 0.5s ease;
+  font-size: 23px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Кнопки */
+.controls {
+  position: fixed; /* Фиксированное положение */
+  bottom: 55px; /* Отступ от нижней части окна */
+  left: 50%; /* Центрирование по горизонтали */
+  transform: translateX(-50%); /* Сдвиг влево на половину ширины */
+  display: flex; /* Используем flexbox для выравнивания кнопок */
+  width: 500px;
+  gap: 10px; /* Отступ между кнопками */
+  z-index: 1000; /* Убедитесь, что кнопки находятся поверх других элементов */
+}
+
+.prev-btn,
+.next-btn {
+  padding: 10px 20px; /* Отступы внутри кнопок */
+  font-size: 16px; /* Размер шрифта */
+  cursor: pointer; /* Указатель при наведении */
+}
+
+.counter {
+  position: fixed; /* Фиксированное положение */
+  top: 50px; /* Отступ от верхней части окна */
+  left: 50%; /* Центрирование по горизонтали */
+  transform: translateX(-50%); /* Сдвиг влево на половину ширины */
+  z-index: 1000; /* Убедитесь, что элемент находится поверх других элементов */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Полупрозрачный фон для лучшей читаемости */
+  padding: 3px; /* Отступы внутри элемента */
+  border-radius: 5px; /* Закругленные углы */
+  background-color: #e1e1e1;
+  color: black;
+  font-size: 27px;
+}
+.text-container {
+  position: absolute;
+}
+
+/* Paragraph */
+
+.paragraph1 {
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: justify;
+  color: #ffc8f0;
+  margin: 20px 0;
+}
+.paragraph2 {
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: justify;
+  margin: 20px 0;
+}
+.paragraph3 {
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: justify;
+  margin: 20px 0;
+  color: rgb(180, 226, 255);
+}
+
+
+audio {
+  width: 100%; /* Занимает всю ширину контейнера */
+  appearance: none; /* Убираем стандартный стиль */
+  background: transparent; /* Прозрачный фон */
+  border: none; /* Убираем рамку */
+  outline: none; /* Убираем обводку при фокусе */
+  margin: 10px 0; /* Отступы сверху и снизу */
+}
+
+/* Стили для панели управления в браузерах на основе WebKit */
+audio::-webkit-media-controls-panel {
+  background-color: #bdbdbd; /* Цвет панели управления */
+  border-radius: 4px; /* Закругленные углы панели */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-mute-button {
+  background-color: #dfdfdf; /* Цвет кнопок */
+  border-radius: 50%; /* Кнопки круглые */
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: #000; /* Цвет текста времени */
+  font-size: 17px;
+}
+
+/* Стили для ползунка громкости */
+audio::-webkit-media-controls-volume-slider {
+  background-color: #bcbcbc; /* Цвет ползунка громкости */
+}
